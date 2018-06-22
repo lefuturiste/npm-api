@@ -12,7 +12,7 @@ Search or get a npm package
 
 ## Usage
 
-Return json result
+Return json result, and support cors headers
 
 GET /search?query=mypackage : Search for a package
 
