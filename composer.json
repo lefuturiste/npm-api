@@ -1,0 +1,32 @@
+{
+    "name": "lefuturiste/npm-api",
+    "description": "Simple api to search and get npm packages",
+    "type": "project",
+    "authors": [
+        {
+            "name": "Le_Futuriste",
+            "email": "contact@lefuturiste.fr"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "App\\": "App/"
+        }
+    },
+    "license": "MIT",
+    "require": {
+        "slim/slim": "^3.8",
+        "guzzlehttp/guzzle": "^6.3",
+        "jimmiw/php-time-ago": "^2.0",
+        "vlucas/phpdotenv": "^2.4",
+        "simplon/mysql": "^2.2",
+        "symfony/console": "^3.3",
+        "tracy/tracy": "^2.4",
+        "php-di/php-di": "^5.4",
+        "lefuturiste/Slim-Bridge": "^1.0.5",
+        "doctrine/cache": "^1.7",
+        "lefuturiste/slim-whoops": "^0.6.2",
+        "lefuturiste/validator": "^1.0",
+        "league/uri": "^5.3"
+    }
+}
