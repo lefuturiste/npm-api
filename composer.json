@@ -26,7 +26,6 @@
         "lefuturiste/Slim-Bridge": "^1.0.5",
         "doctrine/cache": "^1.7",
         "lefuturiste/slim-whoops": "^0.6.2",
-        "lefuturiste/validator": "^1.0",
-        "league/uri": "^5.3"
+        "lefuturiste/validator": "^1.0"
     }
 }
