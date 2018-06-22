@@ -1,6 +1,6 @@
 # npm-api
 
-A npm api server made with PHP
+Search or get a npm package
 
 ## Quick installation
 
