@@ -4,8 +4,6 @@
 
 .idea/*
 .idea/**
-composer.lock
-package-lock.json
 tmp/*
 log/*
 log
