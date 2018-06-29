@@ -1,10 +1,10 @@
 {
     "_readme": [
         "This file locks the dependencies of your project to a known state",
-        "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
+        "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "f8884dc676abd44e83be443dd2e9f472",
+    "content-hash": "7927f059f4615f8403606cc360b8e1dd",
     "packages": [
         {
             "name": "container-interop/container-interop",
@@ -514,6 +514,111 @@
                 "time ago in words"
             ],
             "time": "2018-06-11T06:10:31+00:00"
+        },
+        {
+            "name": "league/uri-parser",
+            "version": "1.4.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/thephpleague/uri-parser.git",
+                "reference": "8beb28540744a5ad728aee7060100002f9196f46"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/thephpleague/uri-parser/zipball/8beb28540744a5ad728aee7060100002f9196f46",
+                "reference": "8beb28540744a5ad728aee7060100002f9196f46",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=7.0.0"
+            },
+            "require-dev": {
+                "friendsofphp/php-cs-fixer": "^2.0",
+                "phpstan/phpstan": "^0.9.2",
+                "phpstan/phpstan-phpunit": "^0.9.4",
+                "phpstan/phpstan-strict-rules": "^0.9.0",
+                "phpunit/phpunit": "^6.0"
+            },
+            "suggest": {
+                "ext-intl": "Allow parsing RFC3987 compliant hosts",
+                "league/uri-schemes": "Allow validating and normalizing URI parsing results"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "1.x-dev"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "League\\Uri\\": "src"
+                },
+                "files": [
+                    "src/functions_include.php"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Ignace Nyamagana Butera",
+                    "email": "nyamsprod@gmail.com",
+                    "homepage": "https://nyamsprod.com"
+                }
+            ],
+            "description": "userland URI parser RFC 3986 compliant",
+            "homepage": "https://github.com/thephpleague/uri-parser",
+            "keywords": [
+                "parse_url",
+                "parser",
+                "rfc3986",
+                "rfc3987",
+                "uri",
+                "url"
+            ],
+            "time": "2018-03-13T21:13:33+00:00"
+        },
+        {
+            "name": "lefuturiste/httper",
+            "version": "v0.1-alpha",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/lefuturiste/httper.git",
+                "reference": "f1d8d451d55d563ecc3e984aa68d6d143eb3d2c3"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/lefuturiste/httper/zipball/f1d8d451d55d563ecc3e984aa68d6d143eb3d2c3",
+                "reference": "f1d8d451d55d563ecc3e984aa68d6d143eb3d2c3",
+                "shasum": ""
+            },
+            "require": {
+                "league/uri-parser": "^1.4",
+                "psr/http-message": "^1.0"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "^7.2"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Httper\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "lefuturiste",
+                    "email": "contact@lefuturiste.fr"
+                }
+            ],
+            "description": "A file_get_contents based, PSR-7 http client.",
+            "time": "2018-06-25T12:34:46+00:00"
         },
         {
             "name": "lefuturiste/monolog-discord-handler",
@@ -1671,7 +1776,9 @@
     "packages-dev": [],
     "aliases": [],
     "minimum-stability": "stable",
-    "stability-flags": [],
+    "stability-flags": {
+        "lefuturiste/httper": 15
+    },
     "prefer-stable": false,
     "prefer-lowest": false,
     "platform": [],
