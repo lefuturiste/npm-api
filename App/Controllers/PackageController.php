@@ -55,19 +55,18 @@ class PackageController extends Controller
 
     public function getPackage($packageName, ServerRequestInterface $request, ResponseInterface $response)
     {
-        $client = new Client();
+        $client = new \Httper\Client();
         try {
-            $packageResponse = $client->get($this->container->get('npm')['endpoint'] . "/package/{$packageName}", [
-                'headers' => [
-                    'x-spiferack' => true
-                ]
-            ]);
+            $packageResponse = $client->request((new Request())
+                ->withUri(new Uri($this->container->get('npm')['endpoint'] . "/package/{$packageName}"))
+                ->withHeader('x-spiferack', true)
+            );
         } catch (\Exception $e) {
             return $response->withJson([
                 'success' => false
             ])->withStatus($e->getCode());
         }
-        $package = json_decode($packageResponse->getBody(), 1);
+        $package = json_decode($packageResponse->getBody()->getContents(), 1);
 
         return $response->withJson([
             'success' => true,
